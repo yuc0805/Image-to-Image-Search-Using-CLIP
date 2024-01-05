@@ -60,6 +60,17 @@ This command will use a pretrained model (`args.model_name`) to search for the t
 - `--save_dir`: Path for saving extracted features.
 - `--feature_dict_file`: Filename for saving image features.
 
+By default, we have configured the CLIP model for feature extraction. However, you have the flexibility to experiment with various models supported by the timm library for feature extraction. Additionally, if you choose to stick with CLIP, you can modify the clip_base parameter with options like ['RN50', 'RN101', 'RN50x4', 'RN50x16', 'RN50x64', 'ViT-B/32', 'ViT-B/16', 'ViT-L/14', 'ViT-L/14@336px']. Feel free to explore and find the model configuration that best suits your needs.
+
+Here's an example how you can train and evaluate a ResNet50 for the below comparision:
+
+```bash
+python search_main.py --mode=train --model_name=resnet50
+```
+```bash
+python search_main.py --mode=test --model_name=resnet50
+```
+
 ## Result
 
 CLIP-based model shows more capable to handle senmatic information in the image, below is a couple example image that shows this:
@@ -78,5 +89,3 @@ CLIP-based model shows more capable to handle senmatic information in the image,
 - Dependencies: `torch`, `PIL`, `numpy`, `tqdm`.
 
 ---
-
-Feel free to customize and expand this README to better suit your project's needs!
