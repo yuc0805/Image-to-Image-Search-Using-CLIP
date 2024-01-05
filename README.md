@@ -91,7 +91,8 @@ CLIP-based model shows more capable to handle senmatic information in the image,
 
 ## Credits
 
-- [Kritik Seth](https://www.kaggle.com/kritikseth) for providing the dataset.
+- Kritik Seth, "Fruits and Vegetables Image Recognition Dataset," Kaggle 2020 
+[https://www.kaggle.com/kritikseth/fruit-and-vegetable-image-recognition]
 - Dependencies: `torch`, `PIL`, `numpy`, `tqdm`.
 
 ---
