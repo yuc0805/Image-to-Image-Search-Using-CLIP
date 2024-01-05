@@ -43,7 +43,7 @@ def _preprocess(n_px):
 def plotSimilarImages(args,image,simImages,simValues,numRow=1,numCol=4):
     fig = plt.figure()
 
-    fig.set_size_inches(15,15)
+    fig.set_size_inches(14,5)
     fig.suptitle(f'engine model: {args.model_name}',fontsize=35)
 
     for j in range(0,numCol*numRow):
