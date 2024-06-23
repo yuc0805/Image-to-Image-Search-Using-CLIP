@@ -4,6 +4,15 @@ This Python script serves as an image-to-image search engine that allows you to 
 
 ## Model Details
 This search engine was specifically designed to experiment with the Contrastive Language-Image Pretraining (CLIP) model, utilizing only its image encoder component. Additionally, the system is adaptable to employ alternative models such as resnet50 and others supported by the timm library for extracting image features. This flexibility allows users to explore a variety of models and their performances within the image-to-image search context.
+## Result
+CLIP-based model shows more capable to handle senmatic information in the image, below is a couple example image that shows this:
+![picture of banana bread using CLIP](https://github.com/yuc0805/Image-to-Image-Search-Using-CLIP/blob/main/output_dir/clip/image/clip_search_top_7_Banana-Bread2.png)
+
+![picture of banana bread using ResNet50](https://github.com/yuc0805/Image-to-Image-Search-Using-CLIP/blob/main/output_dir/resnet50/image/resnet50_search_top_7_Banana-Bread2.png)
+
+![picture of wine using CLIP](https://github.com/yuc0805/Image-to-Image-Search-Using-CLIP/blob/main/output_dir/clip/image/clip_search_top_7_wine.png)
+
+![picture of wine using ResNet50](https://github.com/yuc0805/Image-to-Image-Search-Using-CLIP/blob/main/output_dir/resnet50/image/resnet50_search_top_7_wine.png)
 
 ## Dataset
 
@@ -77,16 +86,7 @@ python search_main.py --mode=train --model_name=resnet50
 python search_main.py --mode=test --model_name=resnet50
 ```
 
-## Result
 
-CLIP-based model shows more capable to handle senmatic information in the image, below is a couple example image that shows this:
-![picture of banana bread using CLIP](https://github.com/yuc0805/Image-to-Image-Search-Using-CLIP/blob/main/output_dir/clip/image/clip_search_top_7_Banana-Bread2.png)
-
-![picture of banana bread using ResNet50](https://github.com/yuc0805/Image-to-Image-Search-Using-CLIP/blob/main/output_dir/resnet50/image/resnet50_search_top_7_Banana-Bread2.png)
-
-![picture of wine using CLIP](https://github.com/yuc0805/Image-to-Image-Search-Using-CLIP/blob/main/output_dir/clip/image/clip_search_top_7_wine.png)
-
-![picture of wine using ResNet50](https://github.com/yuc0805/Image-to-Image-Search-Using-CLIP/blob/main/output_dir/resnet50/image/resnet50_search_top_7_wine.png)
 
 
 ## Credits
